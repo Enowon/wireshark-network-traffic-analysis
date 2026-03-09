@@ -61,7 +61,7 @@ These protocols represent the process of resolving domain names, establishing co
 
 Screenshot:
 
-![Packet Capture](screenshots/packet_capture_overview.png)
+![Packet Capture](screenshot/packet_capture_overview.png)
 
 ---
 
@@ -88,7 +88,7 @@ DNS responses returned the IP addresses associated with the requested domains.
 
 Screenshot:
 
-![DNS Queries](screenshots/dns_queries.png)
+![DNS Queries](screenshot/dns_queries.png)
 
 ---
 
@@ -100,7 +100,7 @@ The packet details section of Wireshark shows the domain name being resolved alo
 
 Screenshot:
 
-![DNS Packet Details](screenshots/dns_packet_details.png)
+![DNS Packet Details](screenshot/dns_packet_details.png)
 
 ---
 
@@ -118,7 +118,7 @@ This process ensures that both systems are ready before data transmission begins
 
 Screenshot:
 
-![TCP Handshake](screenshots/tcp_handshake.png)
+![TCP Handshake](screenshot/tcp_handshake.png)
 
 ---
 
@@ -133,7 +133,7 @@ QUIC improves web performance by reducing connection latency and improving relia
 
 Screenshot:
 
-![QUIC Traffic](screenshots/quic_traffic.png)
+![QUIC Traffic](screenshot/quic_traffic.png)
 
 ---
 
@@ -145,7 +145,7 @@ This analysis helps identify the most active communications in the capture.
 
 Screenshot:
 
-![Conversations](screenshots/ipv4_conversations.png)
+![Conversations](screenshot/ipv4_conversations.png)
 
 ---
 
@@ -157,7 +157,7 @@ This analysis revealed multiple external servers associated with cloud infrastru
 
 Screenshot:
 
-![Endpoints](screenshots/ipv4_endpoints.png)
+![Endpoints](screenshot/ipv4_endpoints.png)
 
 ---
 
