@@ -180,6 +180,20 @@ documentation/wireshark_analysis_report.md
 
 ---
 
+## Protocol Hierarchy Analysis
+
+Wireshark's Protocol Hierarchy statistics were used to summarize the distribution of protocols within the captured traffic.
+
+This analysis provides an overview of how network traffic is composed and highlights the most dominant protocols observed during the browsing session.
+
+The hierarchy revealed traffic associated with DNS resolution, TCP communication, UDP-based QUIC traffic, and encrypted web communication.
+
+Screenshot:
+
+![Protocol Hierarchy](screenshots/protocol_hierarchy.png)
+
+---
+
 ## Skills Demonstrated
 
 - Network traffic capture using Wireshark
