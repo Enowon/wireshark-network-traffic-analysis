@@ -182,16 +182,30 @@ documentation/wireshark_analysis_report.md
 
 ## Protocol Hierarchy Analysis
 
-Wireshark’s **Protocol Hierarchy** statistics were used to analyze the protocol distribution within the captured traffic.
+Wireshark’s Protocol Hierarchy statistics were used to examine the distribution of protocols present within the captured network traffic.
 
-In this analysis, a display filter (`udp.port == 443`) was applied to focus specifically on traffic associated with **QUIC**, which is the transport protocol used by **HTTP/3**.
+The hierarchy provides a structured representation of how protocols are layered from the data link layer through to application layer protocols.
 
-The hierarchy shows the layered structure of the packets observed in the filtered capture. This confirms that the captured traffic consists of **UDP packets carrying QUIC protocol data**, which is used for encrypted web communication over **port 443**.
+The capture consisted of a total of 13,382 packets and revealed the following protocol stack:
 
-QUIC replaces the traditional TCP + TLS combination used in HTTPS and allows faster connection establishment and improved performance for modern web applications.
+Analysis of the hierarchy reveals that:
+
+TCP accounted for approximately 55.9% of packets, representing traditional web communication and encrypted HTTPS sessions.
+
+UDP accounted for approximately 42.4% of packets, largely due to the presence of QUIC protocol traffic.
+
+QUIC represented approximately 36.9% of packets, indicating the use of HTTP/3 by modern web services such as Google.
+
+TLS accounted for approximately 26.3% of packets, demonstrating encrypted HTTPS communication over TCP.
+
+DNS traffic represented approximately 9.2% of packets and corresponds to domain name resolution requests generated during browsing.
+
+A small amount of HTTP traffic was also observed.
+
+Overall, the protocol hierarchy confirms that the captured traffic primarily consists of encrypted web communication supported by DNS resolution and modern HTTP/3 transport mechanisms.
 Screenshot:
 
-![Protocol Hierarchy](screenshot/protocol_hierarchy.png)
+![Protocol Hierarchy](screenshot/protocol_hierarchy2.png)
 
 ---
 
