@@ -190,7 +190,7 @@ The hierarchy revealed traffic associated with DNS resolution, TCP communication
 
 Screenshot:
 
-![Protocol Hierarchy](screenshots/protocol_hierarchy.png)
+![Protocol Hierarchy](screenshot/protocol_hierarchy.png)
 
 ---
 
