@@ -83,24 +83,12 @@ These servers included cloud infrastructure and content delivery networks associ
 
 ## Protocol Hierarchy Analysis
 
-Wireshark’s Protocol Hierarchy statistics were used to analyze the protocol distribution within the captured packets.
+Wireshark’s Protocol Hierarchy statistics were used to examine the distribution of protocols present within the captured network traffic.
 
-A display filter (`udp.port == 443`) was applied in order to focus specifically on traffic associated with QUIC, the transport protocol used by HTTP/3.
+The hierarchy provides a structured representation of how protocols are layered from the data link layer through to application layer protocols.
 
-The protocol hierarchy observed in the capture shows the following layered protocol structure:
-
-Frame  
-→ Ethernet  
-→ Internet Protocol Version 4 (IPv4)  
-→ User Datagram Protocol (UDP)  
-→ QUIC IETF
-
-This indicates that the packets captured in this filtered view consist of UDP traffic carrying QUIC protocol data over port 443.
-
-QUIC is designed to replace traditional TCP-based HTTPS connections by combining transport and encryption mechanisms into a single protocol. This approach reduces latency and improves web performance, particularly for modern browsers communicating with large web services.
-
-The presence of QUIC traffic confirms that the browser used HTTP/3 communication while accessing the visited websites.
-
+The capture consisted of a total of 13,382 packets. Additional information about the capture process and analysis can be found in the README.md file.
+ 
 ---
 ## Conclusion
 
