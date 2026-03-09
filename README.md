@@ -182,12 +182,13 @@ documentation/wireshark_analysis_report.md
 
 ## Protocol Hierarchy Analysis
 
-Wireshark's Protocol Hierarchy statistics were used to summarize the distribution of protocols within the captured traffic.
+Wireshark’s **Protocol Hierarchy** statistics were used to analyze the protocol distribution within the captured traffic.
 
-This analysis provides an overview of how network traffic is composed and highlights the most dominant protocols observed during the browsing session.
+In this analysis, a display filter (`udp.port == 443`) was applied to focus specifically on traffic associated with **QUIC**, which is the transport protocol used by **HTTP/3**.
 
-The hierarchy revealed traffic associated with DNS resolution, TCP communication, UDP-based QUIC traffic, and encrypted web communication.
+The hierarchy shows the layered structure of the packets observed in the filtered capture. This confirms that the captured traffic consists of **UDP packets carrying QUIC protocol data**, which is used for encrypted web communication over **port 443**.
 
+QUIC replaces the traditional TCP + TLS combination used in HTTPS and allows faster connection establishment and improved performance for modern web applications.
 Screenshot:
 
 ![Protocol Hierarchy](screenshot/protocol_hierarchy.png)
